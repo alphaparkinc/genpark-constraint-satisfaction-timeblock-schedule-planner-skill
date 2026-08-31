@@ -1,0 +1,38 @@
+{
+  "name": "genpark-constraint-satisfaction-timeblock-schedule-planner-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Constraint satisfaction timeblock schedule planner maximizing deep work focus hours and minimizing context switching penalties.",
+  "author": "genpark",
+  "category": "productivity",
+  "tags": [
+    "schedule-maker",
+    "timeblocking",
+    "deep-work-planner",
+    "calendar-optimization",
+    "constraint-satisfaction"
+  ],
+  "inputs": {
+    "tasks_specification": {
+      "type": "array"
+    },
+    "daily_working_hours": {
+      "type": "integer"
+    }
+  },
+  "outputs": {
+    "schedule_plan_id": {
+      "type": "string"
+    },
+    "deep_work_focus_blocks_hours": {
+      "type": "number"
+    },
+    "context_switching_penalty_reduced_pct": {
+      "type": "number"
+    },
+    "schedule_ics_calendar_url": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
